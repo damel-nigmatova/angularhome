@@ -19,6 +19,6 @@ export class DashboardComponent implements OnInit {
 
   getCountries(): void{
     this.countryService.getCountries()
-    .subscribe(countries => this.countries = countries.slice(1, 5));
+    .subscribe(countries => this.countries = countries.slice(0, 5));
   }
 }

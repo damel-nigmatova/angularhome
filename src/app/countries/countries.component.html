@@ -2,6 +2,7 @@
 
 <ul class="countries">
   <li *ngFor="let country of countries">
+    <a routerLink="/detail/{{country.name}}"></a>
     <span class="badge">{{country.name}}</span>, {{country.detail}}
   </li>
 </ul>

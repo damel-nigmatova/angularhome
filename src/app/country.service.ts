@@ -17,9 +17,9 @@ export class CountryService {
     return countries;
   }
 
-  getCountry(detail: string): Observable<Country> {
-    const country = COUNTRIES.find(c => c.detail === detail)!;
-    this.messageService.add(`CountryService: fetched country name=${detail}`);
+  getCountry(name: string): Observable<Country> {
+    const country = COUNTRIES.find(c => c.name === name)!;
+    this.messageService.add(`Capital=${name}`);
     return of(country);
   }
 }

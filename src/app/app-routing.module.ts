@@ -8,7 +8,7 @@ import { CountryDetailComponent } from './country-detail/country-detail.componen
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   { path: 'dashboard', component: DashboardComponent },
-  { path: 'detail/:id', component: CountryDetailComponent },
+  { path: 'detail/:name', component: CountryDetailComponent },
   { path: 'countries', component: CountriesComponent }
 ];
 
