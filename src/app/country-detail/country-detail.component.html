@@ -1,0 +1,10 @@
+<div *ngIf="country">
+  <h2>{{country.name | uppercase}} Capital</h2>
+  <div><span>capital: </span>{{country.detail}}</div>
+
+  <div>
+    <label for="country-name">Country name: </label>
+    <input id="country-name" [(ngModel)]="country.name" placeholder="Country name">
+  </div>
+  <button (click)="goBack()">go back</button>
+</div>

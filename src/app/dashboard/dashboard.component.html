@@ -1,0 +1,7 @@
+<h2>Top Countries</h2>
+<div class="countries-menu">
+  <a *ngFor="let country of countries"
+    routerLink="/name/{{country.name}}">
+    {{country.name}}
+  </a>
+</div>
